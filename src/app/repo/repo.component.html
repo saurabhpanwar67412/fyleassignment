@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<div *ngFor="let d of data ">
+    <mat-accordion *ngFor="let a of d ">
+  
+    <!-- #docregion basic-panel -->
+    <!-- #docregion hide-toggle -->
+    
+        
+      <mat-expansion-panel hideToggle >
+    <!-- #enddocregion hide-toggle -->
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+        Repo name :   {{a.name}}
+          </mat-panel-title>
+          <mat-panel-description>
+           Description : {{a.description}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>Language : {{a.language}}</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    </div>
+      
+   

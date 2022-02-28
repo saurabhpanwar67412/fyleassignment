@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<div class="card">
+<div  *ngFor="let d of data " >
+    <img src="{{d.avatar_url}}" alt="Avatar"  > 
+<div class="bio" >
+    <mat-icon> link</mat-icon>  URL:      {{d.url}}
+    <div class="matcard">
+        <mat-card class="example-card" >
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Name : {{d.login}}</mat-card-title>
+              <mat-card-subtitle>Bio : {{d.bio}}</mat-card-subtitle>
+              <mat-card-subtitle><mat-icon> location_on</mat-icon>Location : {{d.location}}</mat-card-subtitle>
+              <mat-card-subtitle>Twitter : {{d.twitter_username}}</mat-card-subtitle>
+            
+            
+            </mat-card-header>
+            <mat-card-content>
+                
+            </mat-card-content>
+            <mat-card-actions>
+             
+            </mat-card-actions>
+          </mat-card>
+        </div>
+       
+        
+        <br><br>    <br><br>
+       
+        <mat-spinner [diameter]="50" *ngIf="spinnerService.visibility | async">
+        </mat-spinner>
+        <app-repo></app-repo>
+</div>
+</div>
+<div class="page">
+    <br><br>    <br><br>    <br><br>    <br><br>
+    <app-pagination-component></app-pagination-component>
+</div>
+
+
+
+</div>
+

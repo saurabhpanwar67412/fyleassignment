@@ -1,0 +1,26 @@
+img {
+    border-radius: 50%;
+    width: 157px;margin-left: 20px;margin-top: 15px;
+  }
+
+  /* div.groove {border-style: groove;} */
+.card{border-style: groove;
+    width: 180%;}
+
+.page{
+
+    float: right;
+
+}
+
+.matcard{
+
+    position: absolute;
+    top: 99px;
+    left: 650px;
+
+}
+
+.bio{
+    width: 187px;margin-left: 20px;margin-top: 15px;
+}
